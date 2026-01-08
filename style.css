@@ -1,0 +1,251 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing : border-box;
+    font-family: "Poppins", sans-serif;
+}
+#heading{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#menubar, #hero{
+    margin-bottom: 60px;
+}
+#hero-cont{
+    display: flex;
+    background-color: #FEEAE9;
+    padding: 35px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+
+
+#heading .logo img{
+    width: 100%;
+    max-width: 145px;
+}
+#heading .menu img{
+    width: 100%;
+    max-width: 45px;
+}
+.content *{
+    margin-bottom: 10px;
+}
+.content h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+.content h3{
+    font-weight: 700;
+    font-size: 40px;
+    color: #FF136F;
+}
+.content p{
+    color:#4E4E4E;
+    line-height: 26px;
+}
+#menubar, #hero{
+    margin-bottom: 60px;
+}
+.tv img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.cat-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+#cat, #shoe, #newsletter{
+    margin-bottom: 100px;
+}
+#news{
+    text-align: center;
+    background-color: #FFF2F1;
+    padding: 140px;
+}
+#news h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#news p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
+#news form{
+    display: flex;
+    margin-top: 20px;
+}
+#news form input[type=text]{
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+#news form button{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+
+}
+
+
+/*common class strt */
+.uni{
+    width: 78%;
+    margin: 0 auto;
+}
+.btnn{
+    padding: 12px 25px;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, #FF589B, #FF136F);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    padding: 12px 25px;
+    border-radius: 6px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.header{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.category{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 25px;
+    border-radius: 15px;
+}
+.category h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+}
+.cmn-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.cmn-card{
+    border: 3px solid #929292;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 320px;
+    text-align: center;
+}
+.cmn-card img{
+    width: 100%;
+
+}
+.cmn-card *{
+    margin-bottom: 18px;
+}
+.cmn-card h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cmn-card p{
+    font-size: 16px;
+    color: #4E4E4E;
+    line-height: 26px;
+}
+.cmn-card h4{
+    font-size: 24px;
+    font-weight: medium;
+}
+
+/* common class end */
+    
+
+/* responsiveness */
+
+/*laptops px 993px - 1200 px */
+@media screen and (max-width: 1200px){
+    .tv img{
+        width: 100%;
+        max-width: 350px;
+    }
+    .cat-cards{
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+}
+/* tablets 641 - 992px */
+@media screen and (max-width: 992px) {
+    #hero-cont{
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cmn-cards{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .cmn-card{
+        max-width: 100%;
+    }
+    #news{
+        padding: 80px;
+    }
+}
+/* phone 320 - 640px */
+@media screen and (max-width : 640px) {
+    #heading .logo img{
+    width: 100%;
+    max-width: 100px;
+    }
+    #heading .menu img{
+        width: 100%;
+        max-width: 30px;
+    }
+    .uni{
+        width: 95%;
+    }
+    #hero-cont{
+        padding: 10px;
+    }
+    #menubar, #hero{
+        margin-bottom: 30px;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .category{
+        flex-direction: column-reverse;
+    }
+    #news form{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #news{
+        padding: 10%;
+    }
+    #news form button{
+        border-radius: 6px;
+    }
+
+}
+
+/* unneed */
